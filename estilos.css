@@ -2,14 +2,18 @@ body{
     margin: auto;
     align-items: center;
     text-align: center;
+    background-image: url(cosmos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 label{
     display: block;
     font-weight: bold;
     margin:5px;
+    color: white;
     
 }
-.card input{
+input{
     width: 20%;
     border: 1px solid #ccc;
     padding: 10px;
