@@ -5,6 +5,7 @@ body{
     background-image: url(cosmos.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    font-family: "Source Code Pro", monospace;
 }
 label{
     display: block;
