@@ -25,10 +25,14 @@ function Insertar_registro(){
                     method: 'POST' ,
                     data: {
                         nombre: user,
-                        correo: email
+                        apellido: username,
+                        dni: indenty,
+                        fecha: date,
+                        correo: email,
+                        contraseña: passw
                     },
                     success: function(data){
-
+                        // Handle the server response here
                     }
 
             })
