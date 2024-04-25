@@ -16,7 +16,7 @@ function Insertar_registro(){
         var email = $('#correo').val();
         var passw = $('#contraseña').val();
 
-        if (user == '' || email == ''){
+        if (user == '' || username == '' || indenty == '' || date == '' || email == '' || passw == ''){
             $('#message').html('LLenar los campos en blanco');
         } else {
             $.ajax(
