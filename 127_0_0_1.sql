@@ -36,7 +36,8 @@ CREATE TABLE `datos` (
   `dni` varchar(100) NOT NULL,
   `fecha_nacimiento` date NOT NULL,
   `correo` varchar(100) NOT NULL,
-  `contraseña` varchar(100) NOT NULL
+  `contraseña` varchar(100) NOT NULL,
+  `repetir` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
