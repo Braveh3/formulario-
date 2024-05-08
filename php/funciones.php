@@ -10,13 +10,13 @@ function insertarRegistro()
 
 global $con;
 
-$UserName= $_POST ['Uname'];
-$UserEmail= $_POST ['Ucorreo'];
-$UserApellido= $_POST ['Uapellido'];
-$UserDni= $_POST ['Udni'];
-$Userfecha= $_POST ['Ufecha'];
-$UserContrasena= $_POST ['Ucontra'];
-$UserRepetir= $_POST ['Urepetir'];
+$UserName= $_POST ['name'];
+$UserEmail= $_POST ['correo'];
+$UserApellido= $_POST ['apellido'];
+$UserDni= $_POST ['dni'];
+$Userfecha= $_POST ['fecha'];
+$UserContrasena= $_POST ['contraseña'];
+$UserRepetir= $_POST ['repetir'];
 
 
 $query= "insert into datos (nombre, apellido, dni, correo, fecha_nacimiento, contraseña, repetir) values('$UserName', '$UserApellido', '$UserDni', '$UserEmail', str_to_date('$Userfecha', '%d/%m/%Y'), '$UserContrasena', '$UserRepetir')  ";
