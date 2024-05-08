@@ -14,7 +14,8 @@ function Insertar_registro(){
         var indenty = $('#dni').val();
         var date = $('fecha').val();
         var email = $('#correo').val();
-        var passw = $('#contraseña').val();
+        var passw = $('#pass').val();
+        var contrarepetir = $('#reset').val();
 
         if (user == '' || username == '' || indenty == '' || date == '' || email == '' || passw == ''){
             $('#message').html('LLenar los campos en blanco');
@@ -24,15 +25,25 @@ function Insertar_registro(){
                     url: 'insertar.php' ,
                     method: 'POST' ,
                     data: {
-                        nombre: user,
-                        apellido: username,
-                        dni: indenty,
-                        fecha: date,
-                        correo: email,
-                        contraseña: passw
+                        Unombre: user,
+                        Uapellido: username,
+                        Udni: indenty,
+                        Ufecha: date,
+                        Ucorreo: email,
+                        Ucontra: passw,
+                        Urepetir: contrarepetir
+
                     },
                     success: function(data){
-                        // Handle the server response here
+                        $('#Mensaje').html (data);
+                        //$('#Mensaje').html ('Se Inserto Bien');
+             
+                        // $('#Registration').modal ('show');
+                        // $('form').trigger ('reset')
+                        // Mostrar_registro();
+             
+                        alert("Entro a la funcion");
+                        alert(data);
                     }
 
             })
