@@ -17,7 +17,7 @@ function Insertar_registro(){
         var passw = $('#pass').val();
         var contrarepetir = $('#reset').val();
 
-        if (user == '' || username == '' || indenty == '' || date == '' || email == '' || passw == ''){
+        if (user == '' || username == '' || indenty == '' || date == '' || email == '' || passw == '' || contrarepetir == ''){
             $('#message').html('LLenar los campos en blanco');
         } else {
             $.ajax(
@@ -35,7 +35,7 @@ function Insertar_registro(){
 
                     },
                     success: function(data){
-                        $('#Mensaje').html (data);
+                        $('#message').html (data);
                         //$('#Mensaje').html ('Se Inserto Bien');
              
                         // $('#Registration').modal ('show');

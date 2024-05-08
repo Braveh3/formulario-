@@ -20,7 +20,7 @@
 <body>
     <h1 style="color: yellow;">Formulario</h1>
 
-    <form action="" method="post">
+    <form onsubmit="return validacion()" method="post">
         <div class="card">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre" required>
@@ -49,7 +49,7 @@
             <label for="repetir">Repetir contraseña:</label>
             <input type="password" name="repetir" id="reset">
         </div>
-        <p id="Mensaje"></p>
+        <p id="message"></p>
         <button type="submit" id="funka">Enviar</button>
     </form>
 
