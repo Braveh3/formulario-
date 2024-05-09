@@ -1,12 +1,11 @@
-function validacion()
-{
-    var  nombre = document.getElementById("nombre").value;
-    var  apellido = document.getElementById("apellido").value;
-    var email =document.getElementById("correo").value;
-    var dni =document.getElementById("dni").value;
-    var fechadenacimiento =document.getElementById("fecha").value
-    
-    alert(nombre + " " + apellido + " " + email +  " " + dni + " " + fechadenacimiento);
+function validacion() {
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var email = document.getElementById("correo").value;
+    var dni = document.getElementById("dni").value;
+    var fechadenacimiento = document.getElementById("fecha").value
+
+    alert(nombre + " " + apellido + " " + email + " " + dni + " " + fechadenacimiento);
 }
 
 
