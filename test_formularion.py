@@ -41,3 +41,4 @@ class TestFormularion():
     self.driver.find_element(By.ID, "funka").click()
     self.driver.close()
   
+# time.sleep
